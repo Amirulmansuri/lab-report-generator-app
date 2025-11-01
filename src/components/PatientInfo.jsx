@@ -64,8 +64,42 @@ export default function PatientInfo({ onSave }) {
     };
 
     const handleSave = () => {
-        onSave(info, []); // send info to parent
+        // Validation check
+        if (!info.name.trim()) {
+            alert("Please enter patient name.");
+            return;
+        }
+        if (!info.age.trim()) {
+            alert("Please enter age.");
+            return;
+        }
+        if (!info.contact.trim()) {
+            alert("Please enter contact number.");
+            return;
+        }
+        if (!/^\d{10}$/.test(info.contact)) {
+            alert("Please enter valid 10-digit phone number.");
+            return;
+        }
+        if (!info.gender.trim()) {
+            alert("Please select gender.");
+            return;
+        }
+        if (!info.referredBy.trim()) {
+            alert("Please select or enter referred doctor.");
+            return;
+        }
+
+
+
+
+        // ✅ All good, save data
+        onSave(info, []);
     };
+
+
+
+
 
     return (
         <div
@@ -88,101 +122,144 @@ export default function PatientInfo({ onSave }) {
                     gap: "12px",
                 }}
             >
-                <input
-                    type="text"
-                    name="name"
-                    placeholder="Patient Name"
-                    value={info.name}
-                    onChange={handleChange}
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                    }}
-                />
-                <input
-                    type="number"
-                    name="age"
-                    placeholder="Age"
-                    value={info.age}
-                    onChange={handleChange}
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                    }}
-                />
 
-                <select
-                    name="gender"
-                    value={info.gender}
-                    onChange={handleChange}
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                    }}
-                >
-                    <option>Male</option>
-                    <option>Female</option>
-                    <option>Other</option>
-                </select>
-
-                <input
-                    type="text"
-                    name="contact"
-                    placeholder="Contact Number"
-                    value={info.contact}
-                    onChange={handleChange}
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                    }}
-                />
-
-                <input
-                    type="date"
-                    name="date"
-                    value={info.date}
-                    readOnly
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                        backgroundColor: "#f3f4f6",
-                    }}
-                />
-
-                <input
-                    type="text"
-                    name="patientId"
-                    value={info.patientId}
-                    readOnly
-                    style={{
-                        padding: "8px",
-                        border: "1px solid #ccc",
-                        borderRadius: "6px",
-                        backgroundColor: "#f3f4f6",
-                        fontWeight: 600,
-                    }}
-                />
-
-                {/* ✅ New Dropdown for Doctor */}
-                <div style={{ gridColumn: "1 / span 2" }}>
-                    <label
+                {/* Patient Name */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Patient Name
+                    </label>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter Patient Name"
+                        value={info.name}
+                        onChange={handleChange}
+                        required
                         style={{
-                            display: "block",
-                            marginBottom: "6px",
-                            fontWeight: 500,
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            width: "100%",
+                        }}
+                    />
+                </div>
+
+                {/* Age */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Age
+                    </label>
+                    <input
+                        type="number"
+                        name="age"
+                        placeholder="Enter Age"
+                        value={info.age}
+                        onChange={handleChange}
+                        required
+                        style={{
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            width: "100%",
+                        }}
+                    />
+                </div>
+
+                {/* Gender */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Gender
+                    </label>
+                    <select
+                        name="gender"
+                        value={info.gender}
+                        onChange={handleChange}
+                        required
+                        style={{
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            width: "100%",
                         }}
                     >
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                {/* Contact */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Contact Number
+                    </label>
+                    <input
+                        type="text"
+                        name="contact"
+                        placeholder="Enter Contact Number"
+                        value={info.contact}
+                        onChange={handleChange}
+                        required
+                        style={{
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            width: "100%",
+                        }}
+                    />
+                </div>
+
+                {/* Date */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Date
+                    </label>
+                    <input
+                        type="date"
+                        name="date"
+                        value={info.date}
+                        readOnly
+                        style={{
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            backgroundColor: "#f3f4f6",
+                            width: "100%",
+                        }}
+                    />
+                </div>
+
+                {/* Patient ID */}
+                <div>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                        Patient ID
+                    </label>
+                    <input
+                        type="text"
+                        name="patientId"
+                        value={info.patientId}
+                        readOnly
+                        style={{
+                            padding: "8px",
+                            border: "1px solid #ccc",
+                            borderRadius: "6px",
+                            backgroundColor: "#f3f4f6",
+                            width: "100%",
+                            fontWeight: 600,
+                        }}
+                    />
+                </div>
+
+                {/* Referred By Doctor */}
+                <div style={{ gridColumn: "1 / span 2" }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
                         Referred By Doctor
                     </label>
                     <select
                         name="referredBy"
                         value={isManualDoctor ? "manual" : info.referredBy}
                         onChange={handleChange}
+                        required
                         style={{
                             padding: "8px",
                             border: "1px solid #ccc",

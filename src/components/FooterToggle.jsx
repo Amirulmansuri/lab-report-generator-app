@@ -20,10 +20,11 @@ export function FooterToggle({ onToggle }) {
         style={{
           accentColor: "#dc2626",
           width: "16px",
+          marginLeft: "5px",
           height: "16px",
         }}
       />
-      <label htmlFor="footer-toggle" className="text-gray-700 font-medium">
+      <label htmlFor="footer-toggle" className="text-gray-700 font-medium ">
         Include Footer in Report
       </label>
     </div>

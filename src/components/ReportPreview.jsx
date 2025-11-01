@@ -351,7 +351,7 @@ function ReportPreview({
                         fontWeight: "bold",
                     }}
                     onMouseOver={(e) => (e.target.style.backgroundColor = "#FF7F7F")}
-                    onMouseOut={(e) => (e.target.style.backgroundColor = "#FF7F7F")}
+                    onMouseOut={(e) => (e.target.style.backgroundColor = "#FF0000")}
                 >
                     Save as PDF
                 </button>
