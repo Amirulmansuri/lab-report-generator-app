@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/', // use root for Netlify (or remove this line)
+  base: "/lab-report-generator-app/", // use root for Netlify (or remove this line)
 })
