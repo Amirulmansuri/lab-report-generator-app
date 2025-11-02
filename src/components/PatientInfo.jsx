@@ -111,7 +111,7 @@ export default function PatientInfo({ onSave }) {
                 marginBottom: "16px",
             }}
         >
-            <h2 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "12px" }}>
+            <h2 style={{ fontSize: "25px", fontWeight: 600, marginBottom: "35px" }}>
                 Patient Information
             </h2>
 
@@ -125,7 +125,7 @@ export default function PatientInfo({ onSave }) {
 
                 {/* Patient Name */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Patient Name
                     </label>
                     <input
@@ -139,14 +139,14 @@ export default function PatientInfo({ onSave }) {
                             padding: "8px",
                             border: "1px solid #ccc",
                             borderRadius: "6px",
-                            width: "100%",
+                            width: "90%",
                         }}
                     />
                 </div>
 
                 {/* Age */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Age
                     </label>
                     <input
@@ -160,14 +160,14 @@ export default function PatientInfo({ onSave }) {
                             padding: "8px",
                             border: "1px solid #ccc",
                             borderRadius: "6px",
-                            width: "100%",
+                            width: "90%",
                         }}
                     />
                 </div>
 
                 {/* Gender */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Gender
                     </label>
                     <select
@@ -179,7 +179,7 @@ export default function PatientInfo({ onSave }) {
                             padding: "8px",
                             border: "1px solid #ccc",
                             borderRadius: "6px",
-                            width: "100%",
+                            width: "92%",
                         }}
                     >
                         <option>Male</option>
@@ -190,7 +190,7 @@ export default function PatientInfo({ onSave }) {
 
                 {/* Contact */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Contact Number
                     </label>
                     <input
@@ -204,14 +204,14 @@ export default function PatientInfo({ onSave }) {
                             padding: "8px",
                             border: "1px solid #ccc",
                             borderRadius: "6px",
-                            width: "100%",
+                            width: "90%",
                         }}
                     />
                 </div>
 
                 {/* Date */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Date
                     </label>
                     <input
@@ -224,14 +224,14 @@ export default function PatientInfo({ onSave }) {
                             border: "1px solid #ccc",
                             borderRadius: "6px",
                             backgroundColor: "#f3f4f6",
-                            width: "100%",
+                            width: "90%",
                         }}
                     />
                 </div>
 
                 {/* Patient ID */}
                 <div>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Patient ID
                     </label>
                     <input
@@ -244,7 +244,7 @@ export default function PatientInfo({ onSave }) {
                             border: "1px solid #ccc",
                             borderRadius: "6px",
                             backgroundColor: "#f3f4f6",
-                            width: "100%",
+                            width: "90%",
                             fontWeight: 600,
                         }}
                     />
@@ -252,7 +252,7 @@ export default function PatientInfo({ onSave }) {
 
                 {/* Referred By Doctor */}
                 <div style={{ gridColumn: "1 / span 2" }}>
-                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 500 }}>
+                    <label style={{ display: "block", marginBottom: "6px", fontWeight: 700 }}>
                         Referred By Doctor
                     </label>
                     <select
@@ -264,7 +264,7 @@ export default function PatientInfo({ onSave }) {
                             padding: "8px",
                             border: "1px solid #ccc",
                             borderRadius: "6px",
-                            width: "100%",
+                            width: "95%",
                             marginBottom: "6px",
                         }}
                     >
