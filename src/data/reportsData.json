@@ -31,8 +31,8 @@
     "CBC-Indices": [
         {
             "name": "Hemoglobin",
-            "range": "13 - 17 g/dL (Male), 12 - 15 g/dL (Female)",
-            "unit": "g/dL"
+            "range": "13 - 17 g/dL (Male), 12 - 15 mg/dL (Female)",
+            "unit": "mg/dL"
         },
         {
             "name": "RBC Count",
@@ -48,6 +48,133 @@
             "name": "Platelets",
             "range": "1.5 - 4.5 lakh/cmm",
             "unit": "lakh/cmm"
+        },
+        {
+            "name": "Polymorphas",
+            "range": "50 - 70 /%",
+            "unit": "/%"
+        },
+        {
+            "name": "Lympphocytes",
+            "range": "20 - 40 / %",
+            "unit": "/%"
+        },
+        {
+            "name": "Eosinophils",
+            "range": "1 - 6 / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Monocytes",
+            "range": "2 - 8 / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Basophils",
+            "range": "0 -1  / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Total R.B.C Count",
+            "range": " 4.5 - 6 Cu.mm (Male), 4 - 4.5 Cu.mm (Female) ",
+            "unit": "/Cu.mm"
+        },
+        {
+            "name": "P C V [Haematocrit]",
+            "range": " 42 - 52 % (Male) , 36 - 48 % (Female) ",
+            "unit": "/ %"
+        },
+        {
+            "name": "M C V",
+            "range": "82 -92  / Cu.mm",
+            "unit": "/ %"
+        },
+        {
+            "name": "M C H",
+            "range": "27 -32  /  Pg",
+            "unit": "/ Pg "
+        },
+        {
+            "name": "M C H C",
+            "range": "32 - 36  / %",
+            "unit": "/ %"
+        },
+        {
+            "name": " R B C Morphology",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": " W B C Morphology",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": " Malaraial Parasite ",
+            "range": "-",
+            "unit": "-"
+        }
+    ],
+    "CBC ESR PLT": [
+        {
+            "name": "Hemoglobin",
+            "range": "13 - 17 g/dL (Male), 12 - 15 mg/dL (Female)",
+            "unit": "mg/dL"
+        },
+        {
+            "name": "RBC Count",
+            "range": "4.5 - 5.9 mill/cmm",
+            "unit": "mill/cmm"
+        },
+        {
+            "name": "WBC Count",
+            "range": "4000 - 11000 /cmm",
+            "unit": "/cmm"
+        },
+        {
+            "name": "Platelets",
+            "range": "1.5 - 4.5 lakh/cmm",
+            "unit": "lakh/cmm"
+        },
+        {
+            "name": "Polymorphas",
+            "range": "50 - 70 /%",
+            "unit": "/%"
+        },
+        {
+            "name": "Lympphocytes",
+            "range": "20 - 40 / %",
+            "unit": "/%"
+        },
+        {
+            "name": "Eosinophils",
+            "range": "1 - 6 / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Monocytes",
+            "range": "2 - 8 / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Basophils",
+            "range": "0 -1  / %",
+            "unit": "/ %"
+        },
+        {
+            "name": "Total R.B.C Count",
+            "range": " 4.5 - 6 Cu.mm (Male), 4 - 4.5 Cu.mm (Female) ",
+            "unit": "/Cu.mm"
+        },
+        {
+            "name": "AEC,EOS Count",
+            "range": " 40 - 100 Cu.mm ",
+            "unit": "/Cu.mm"
+        },
+        {
+            "name": "ESR",
+            "range": " up to 20 mm ",
+            "unit": "/mm"
         }
     ],
     "CRP": [
@@ -240,51 +367,96 @@
     ],
     "Thyroid Test": [
         {
-            "name": "T3",
-            "range": "0.8 - 2.0 ng/mL",
+            "name": "T3 (Trilodothyronine)",
+            "range": "0.4 - 1.81 ng/mL",
             "unit": "ng/mL"
         },
         {
-            "name": "T4",
-            "range": "5.1 - 14.1 µg/dL",
-            "unit": "µg/dL"
+            "name": "T4 (Thyroxine)",
+            "range": "8.6 - 10.5 µg%",
+            "unit": "µg%"
         },
         {
-            "name": "TSH",
-            "range": "0.3 - 5.0 µIU/mL",
+            "name": "TSH (Thyroid Stimulating Hormone)",
+            "range": "0.40 - 4.20 µIU/mL",
             "unit": "µIU/mL"
         }
     ],
     "Urine": [
         {
             "name": "Color",
-            "range": "Pale Yellow",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Deposit",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Apperance",
+            "range": "-",
             "unit": "-"
         },
         {
             "name": "Reaction (pH)",
-            "range": "5.0 - 7.5",
+            "range": "-",
             "unit": "-"
         },
         {
-            "name": "Protein",
-            "range": "Absent",
+            "name": "Sp. G",
+            "range": "-",
             "unit": "-"
         },
         {
             "name": "Sugar",
-            "range": "Absent",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Albumin",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bile Salt",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Bile Pigment",
+            "range": "-",
             "unit": "-"
         },
         {
             "name": "Pus Cells",
-            "range": "0 - 5 /HPF",
-            "unit": "/HPF"
+            "range": "-",
+            "unit": "-"
         },
         {
-            "name": "RBC",
-            "range": "0 - 2 /HPF",
-            "unit": "/HPF"
+            "name": " R.B.C",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Casts",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Crystals",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Epithelial Cells",
+            "range": "-",
+            "unit": "-"
+        },
+        {
+            "name": "Others",
+            "range": "-",
+            "unit": "-"
         }
     ]
 }
