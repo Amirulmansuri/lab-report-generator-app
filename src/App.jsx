@@ -66,6 +66,36 @@ function App() {
           description={description}
         />
       </div>
+
+
+      <div
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "170px",
+          zIndex: 100,
+        }}
+      >
+        <button
+          onClick={() => window.location.reload()}
+          style={{
+            backgroundColor: "#00732F",
+            color: "#fff",
+            padding: "10px 18px",
+            borderRadius: "8px",
+            border: "none",
+            cursor: "pointer",
+            fontWeight: "bold",
+          }}
+          onMouseOver={(e) => (e.target.style.backgroundColor = "#3BAF5D")}
+          onMouseOut={(e) => (e.target.style.backgroundColor = "#00732F")}
+        >
+          New Report
+        </button>
+      </div>
+
+
+
     </div>
   );
 }
