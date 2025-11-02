@@ -11,7 +11,7 @@
             "unit": "mg/dL"
         },
         {
-            "name": "S. Bilirubin[Indirect]3",
+            "name": "S. Bilirubin[Indirect]",
             "range": "0.17 - 0.98 mg/dL",
             "unit": "mg/dL"
         }
@@ -31,7 +31,7 @@
     "CBC-Indices": [
         {
             "name": "Hemoglobin",
-            "range": "13 - 17 g/dL (Male), 12 - 15 mg/dL (Female)",
+            "range": "13 - 17 (M), 12 - 15 (F)",
             "unit": "mg/dL"
         },
         {
@@ -76,12 +76,12 @@
         },
         {
             "name": "Total R.B.C Count",
-            "range": " 4.5 - 6 Cu.mm (Male), 4 - 4.5 Cu.mm (Female) ",
+            "range": " 4.5 - 6 (M), 4 - 4.5 (F) ",
             "unit": "/Cu.mm"
         },
         {
             "name": "P C V [Haematocrit]",
-            "range": " 42 - 52 % (Male) , 36 - 48 % (Female) ",
+            "range": " 42 - 52 (M) , 36 - 48 (F) ",
             "unit": "/ %"
         },
         {
@@ -118,7 +118,7 @@
     "CBC ESR PLT": [
         {
             "name": "Hemoglobin",
-            "range": "13 - 17 g/dL (Male), 12 - 15 mg/dL (Female)",
+            "range": "13 - 17 (M), 12 - 15 (F)",
             "unit": "mg/dL"
         },
         {
@@ -163,7 +163,7 @@
         },
         {
             "name": "Total R.B.C Count",
-            "range": " 4.5 - 6 Cu.mm (Male), 4 - 4.5 Cu.mm (Female) ",
+            "range": " 4.5 - 6 (M), 4 - 4.5 (F) ",
             "unit": "/Cu.mm"
         },
         {
