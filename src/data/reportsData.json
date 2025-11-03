@@ -239,23 +239,38 @@
     ],
     "Lipid": [
         {
-            "name": "Total Cholesterol",
-            "range": "< 200 mg/dL",
+            "name": "S. CHOLESTEROL ",
+            "range": "LESS THAN 240;BORDER LINE 200-239",
             "unit": "mg/dL"
         },
         {
-            "name": "HDL Cholesterol",
-            "range": "> 40 mg/dL",
+            "name": "TRIGLYSERIDE",
+            "range": "M:40-140 , F:50-165",
             "unit": "mg/dL"
         },
         {
-            "name": "LDL Cholesterol",
-            "range": "< 130 mg/dL",
+            "name": "HDL. CHOLESTEROL",
+            "range": "M:35-80 , F:42-88",
             "unit": "mg/dL"
         },
         {
-            "name": "Triglycerides",
-            "range": "< 150 mg/dL",
+            "name": "LDL. CHOLESTEROL",
+            "range": "UP TO 160",
+            "unit": "mg/dL"
+        },
+        {
+            "name": "VLDLCHOLESTEROL",
+            "range": "BY CALCULATION",
+            "unit": "mg/dL"
+        },
+        {
+            "name": "CHOLESTEROL/HDL",
+            "range": "BY CALCULATION",
+            "unit": "mg/dL"
+        },
+        {
+            "name": "LDL/HDL",
+            "range": "BY CALCULATION",
             "unit": "mg/dL"
         }
     ],
