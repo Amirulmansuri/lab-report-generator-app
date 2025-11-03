@@ -30,6 +30,13 @@ function TestEntry({ onSave }) {
         onSave(finalTests, selectedReport); // ✅ send report name too
     };
 
+
+    const addEmptyRow = () => {
+        const newRow = { name: "", range: "", unit: "", manual: true };
+        setTestList((prev) => [...prev, newRow]);
+    };
+
+
     return (
         <div className="bg-white p-4 rounded-lg shadow-md">
             <h2 className="text-lg font-semibold mb-3">🧪 Select Report Type</h2>
@@ -69,7 +76,25 @@ function TestEntry({ onSave }) {
                     <tbody>
                         {testList.map((t, i) => (
                             <tr key={i}>
-                                <td className="border p-1">{t.name}</td>
+                                {/* Test Name */}
+                                <td className="border p-1">
+                                    {t.manual ? (
+                                        <input
+                                            type="text"
+                                            value={t.name}
+                                            onChange={(e) => {
+                                                const updated = [...testList];
+                                                updated[i].name = e.target.value;
+                                                setTestList(updated);
+                                            }}
+                                            className="border rounded-md p-1 w-full"
+                                        />
+                                    ) : (
+                                        t.name
+                                    )}
+                                </td>
+
+                                {/* Result */}
                                 <td className="border p-1">
                                     <input
                                         type="text"
@@ -78,13 +103,78 @@ function TestEntry({ onSave }) {
                                         className="border rounded-md p-1 w-full"
                                     />
                                 </td>
-                                <td className="border p-1">{t.range}</td>
-                                <td className="border p-1">{t.unit}</td>
+
+                                {/* Range */}
+                                <td className="border p-1">
+                                    {t.manual ? (
+                                        <input
+                                            type="text"
+                                            value={t.range}
+                                            onChange={(e) => {
+                                                const updated = [...testList];
+                                                updated[i].range = e.target.value;
+                                                setTestList(updated);
+                                            }}
+                                            className="border rounded-md p-1 w-full"
+                                        />
+                                    ) : (
+                                        t.range
+                                    )}
+                                </td>
+
+                                {/* Unit */}
+                                <td className="border p-1">
+                                    {t.manual ? (
+                                        <input
+                                            type="text"
+                                            value={t.unit}
+                                            onChange={(e) => {
+                                                const updated = [...testList];
+                                                updated[i].unit = e.target.value;
+                                                setTestList(updated);
+                                            }}
+                                            className="border rounded-md p-1 w-full"
+                                        />
+                                    ) : (
+                                        t.unit
+                                    )}
+                                </td>
                             </tr>
                         ))}
                     </tbody>
+
                 </table>
             )}
+
+
+
+
+            {/* Add Manual Test Button */}
+
+
+            {selectedReport && (
+                <div className="text-right mt-3">
+                    <button
+                        onClick={addEmptyRow}
+                        style={{
+                            marginTop: "16px",
+                            // marginRight: "10px",
+                            backgroundColor: "#00732F", // green
+                            color: "white",
+                            padding: "8px 16px",
+                            borderRadius: "6px",
+                            border: "none",
+                            cursor: "pointer",
+                            fontWeight: "600",
+                        }}
+                    >
+                        Add New Row
+                    </button>
+                </div>
+            )}
+
+
+
 
             {/* Save Report Button */}
             {selectedReport && (
@@ -98,6 +188,7 @@ function TestEntry({ onSave }) {
                             padding: "8px 16px",
                             border: "none",
                             borderRadius: "6px",
+                            fontWeight: "600",
                             cursor: "pointer",
                         }}
                     >
