@@ -239,22 +239,22 @@
     ],
     "Lipid": [
         {
-            "name": "S. CHOLESTEROL ",
-            "range": "LESS THAN 240;BORDER LINE 200-239",
+            "name": "S. Cholesterol  ",
+            "range": "Less then 240 , Border Line 200-239 ",
             "unit": "mg/dL"
         },
         {
-            "name": "TRIGLYSERIDE",
+            "name": " Triglyseride TRIGLYSERIDE",
             "range": "M:40-140 , F:50-165",
             "unit": "mg/dL"
         },
         {
-            "name": "HDL. CHOLESTEROL",
+            "name": "HDL. Cholesterol",
             "range": "M:35-80 , F:42-88",
             "unit": "mg/dL"
         },
         {
-            "name": "LDL. CHOLESTEROL",
+            "name": "LDL. Cholesterol",
             "range": "UP TO 160",
             "unit": "mg/dL"
         },
